@@ -1,7 +1,9 @@
 # Parsing Trace File
 Parsing Trace File and generate a unique and sorted list.
 
-Usage:
+## Usage:
+Please put the trace file in the same folder as the tool.
+
 ```
 Default ty.txt.  
 If not, enter the filename (without .txt):  
