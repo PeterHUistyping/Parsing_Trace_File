@@ -15,7 +15,17 @@ public class parsing{
     public static void main(String[] args) throws IOException {
         Set<String> api=new HashSet<>();
         try {
-          String filename = "ty";
+          String filename= "ty";  
+          try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Default ty.txt.  \n");  
+
+            System.out.print("If not, enter the filename (without .txt): ");  
+              filename= sc.nextLine();              //reads string   
+        }
+          System.out.print("Filename: "+filename+".txt\n");  
+          if(filename.isEmpty()){
+                filename= "ty";  
+          }
           File myObj = new File(filename+".txt");
           Scanner myReader = new Scanner(myObj);
           while (myReader.hasNextLine()) {
